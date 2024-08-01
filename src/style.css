@@ -3,24 +3,36 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto";
+  background: url(background.jpeg);
+}
+
 nav {
   display: flex;
   justify-content: center;
+  background: rgba(0,0,0,0.85);
+  color: #FFF;
+
 }
 
 button {
   padding: 24px;
-  background: #FFF;
   border: none;
+  background: rgba(0,0,0,0);
+  color: #FFF;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
 button:hover {
-  background: #000;
-  color: #FFF;
+  background: #FFF;
+  color: #000;
 }
 
 #content {
-  background: url(background.jpg);
+  background: url(background.jpeg);
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -29,16 +41,24 @@ button:hover {
 }
 
 .container {
-  width: 80%;
-  height: 80%;
-  background: #FFF;
+  width: 50%;
+  height: 50%;
+  background: rgba(0,0,0,0.5);
+  color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
+.name {
+  font-family: "Tangerine";
+  font-size: 5rem;
+}
+
 footer {
   text-align: center;
   padding: 24px 0;
+  background: rgba(0,0,0,0.85);
+  color: #FFF;
 }
