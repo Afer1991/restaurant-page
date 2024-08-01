@@ -5,7 +5,8 @@
 
 body {
   font-family: "Roboto";
-  background: url(background.jpeg);
+  background: url(background.jpg);
+  background-size: cover;
 }
 
 nav {
@@ -31,8 +32,6 @@ button:hover {
 }
 
 #content {
-  background: url(background.jpeg);
-  background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -43,6 +42,7 @@ button:hover {
 .container {
   width: 50%;
   height: 50%;
+  padding: 24px 0;
   background: rgba(0,0,0,0.5);
   color: #FFF;
   display: flex;
@@ -54,6 +54,12 @@ button:hover {
 .name {
   font-family: "Tangerine";
   font-size: 5rem;
+}
+
+.pizzaiolo {
+  height: 50%;
+  width: 35%;
+  border-radius: 50%;
 }
 
 footer {
