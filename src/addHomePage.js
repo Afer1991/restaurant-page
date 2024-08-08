@@ -2,6 +2,10 @@ const addHomePage = () => {
 
   const content = document.getElementById("content");
 
+  while (content.hasChildNodes()) {
+    content.removeChild(content.firstChild);
+  }
+
   const container = document.createElement("div");
   container.classList.add("container");
   content.appendChild(container);
